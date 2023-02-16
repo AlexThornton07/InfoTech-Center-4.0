@@ -39,19 +39,19 @@ vehicleResponseSystem()
 
 # VRS changes the in car temperature depending on weather condition
 def temperatureInCar():
-	if weatherAlert == "Snowing":
-		print("\nThe temperature has changed to 50 degrees because of",weatherAlert)
-	elif weatherAlert == "Blizzard":
-		print("\nblah")
-	elif weatherAlert == "Rain":
-		print("\nblah")
-	elif weatherAlert == "Foggy":
-		print("\nblah")
-	elif weatherAlert == "Icy":
-		print("\nblah")
-	elif weatherAlert == "Windy":
-		print("\nblah")
-	else:
-		print("\nblah")
+    if weatherAlert == "Snowing":
+        print("\nThe heat has changed to high and butt warmers are engaged because of",weatherAlert)
+    elif weatherAlert == "Blizzard":
+        print("\nThe heat has changed to medium and butt warmers are engaged because of",weatherAlert)
+    elif weatherAlert == "Rain":
+        print("")
+    elif weatherAlert == "Windy":
+        print("")
+    elif weatherAlert == "Icy":
+        print("\nDefrost has been engaged and heat has been changed to medium")
+    elif weatherAlert == "Foggy":
+        print("Headlights have been engaged")
+    else:
+        print("\nAir Conditioning has been turned on due to",weatherAlert)
 
 temperatureInCar()
