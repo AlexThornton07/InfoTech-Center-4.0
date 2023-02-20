@@ -138,7 +138,8 @@ vehicleResponseSystem()
 print("\nChecking current gas levels...\n")
 sleep(1)
 gasLevelAlert()
-=======
+
+
 # Date: 1.20.23
 # Program: Infotech Center Uprgrades
 
@@ -222,5 +223,24 @@ def seatSettings():
 seatSettings()
 
 
+vehicleResponseSystem()
 
+# VRS changes the in car temperature depending on weather condition
+def temperatureInCar():
+    if weatherAlert == "Snowing":
+        print("\nThe heat has changed to high and butt warmers are engaged because of",weatherAlert)
+    elif weatherAlert == "Blizzard":
+        print("\nThe heat has changed to medium and butt warmers are engaged because of",weatherAlert)
+    elif weatherAlert == "Rain":
+        print("")
+    elif weatherAlert == "Windy":
+        print("")
+    elif weatherAlert == "Icy":
+        print("\nDefrost has been engaged and heat has been changed to medium")
+    elif weatherAlert == "Foggy":
+        print("Headlights have been engaged")
+    else:
+        print("\nAir Conditioning has been turned on due to",weatherAlert)
+
+temperatureInCar()
 
